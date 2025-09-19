@@ -1,0 +1,89 @@
+import React from "react";
+
+const Projects = () => {
+  return (
+    <div>
+      <section id="projects" className="services section">
+        <div className="container section-title" data-aos="fade-up">
+          <h2>Projects</h2>
+        </div>
+
+        <div className="container">
+          <div className="row gy-4">
+            {/* Project 1 */}
+            <div
+              className="col-lg-4 col-md-6 service-item d-flex"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div className="icon flex-shrink-0">
+                <i className="bi bi-card-checklist"></i>
+              </div>
+              <div>
+                <h4 className="title">
+                  <a href="service-details.html" className="stretched-link">
+                    NEPSE Stock Prediction using LSTM
+                  </a>
+                </h4>
+                <p className="description">
+                  Minor project done as a requirement of Computer Engineering
+                  Sixth Semester Curriculum, based on Deep Learning model LSTM.
+                </p>
+              </div>
+            </div>
+
+            {/* Project 2 */}
+            <div
+              className="col-lg-4 col-md-6 service-item d-flex"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div className="icon flex-shrink-0">
+                <i className="bi bi-card-checklist"></i>
+              </div>
+              <div>
+                <h4 className="title">
+                  <a href="service-details.html" className="stretched-link">
+                    SmartFlow: Intelligent Traffic Management System for Speed
+                    Monitoring and Adaptive Signal Control
+                  </a>
+                </h4>
+                <p className="description">
+                  Major project for the fourth year of Engineering. Developed a
+                  vehicle detection and tracking system using YOLOv8 + DeepSORT.
+                  Integrated speed estimation using real-world distance and
+                  video FPS.
+                </p>
+              </div>
+            </div>
+
+            {/* Project 3 */}
+            <div
+              className="col-lg-4 col-md-6 service-item d-flex"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div className="icon flex-shrink-0">
+                <i className="bi bi-card-checklist"></i>
+              </div>
+              <div>
+                <h4 className="title">
+                  <a href="service-details.html" className="stretched-link">
+                    Image Generation using GANs
+                  </a>
+                </h4>
+                <p className="description">
+                  Implemented Generative Adversarial Networks (GANs) to generate
+                  realistic male and female faces. Trained the model on a
+                  diverse dataset to improve image quality and diversity.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Projects;

@@ -1,9 +1,9 @@
-import React from "react";
-import profileImg from "../assets/img/my-profile-img.jpg"; // ✅ import image
-
-const Navbar = () => {
+import React from 'react'
+import profileImg from "../assets/img/my-profile-img.jpg"; // 
+const Header = () => {
   return (
-    <header id="header" className="header dark-background d-flex flex-column">
+    <div>
+       <header id="header" className="header dark-background d-flex flex-column">
       {/* Mobile toggle */}
       <i className="header-toggle d-xl-none bi bi-list"></i>
 
@@ -35,38 +35,10 @@ s
         </a>
       </div>
 
-      {/* Navigation Menu */}
-      <nav id="navmenu" className="navmenu">
-        <ul>
-          <li>
-            <a href="#hero" className="active">
-              <i className="bi bi-house navicon"></i> Home
-            </a>
-          </li>
-          <li>
-            <a href="#about">
-              <i className="bi bi-person navicon"></i> About
-            </a>
-          </li>
-          <li>
-            <a href="#resume">
-              <i className="bi bi-file-earmark-text navicon"></i> Resume
-            </a>
-          </li>
-          <li>
-            <a href="#projects">
-              <i className="bi bi-hdd-stack navicon"></i> Projects
-            </a>
-          </li>
-          <li>
-            <a href="#contact">
-              <i className="bi bi-envelope navicon"></i> Contact
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-  );
-};
+      </header>
 
-export default Navbar;
+    </div>
+  )
+}
+
+export default Header

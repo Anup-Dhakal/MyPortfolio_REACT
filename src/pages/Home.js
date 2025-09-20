@@ -8,20 +8,23 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import ScrollToTop from "../components/ScrollToTop";
 import Preloader from "../components/Preloader";
+
 const Home =()=>{
     return (
         <>
         
         <Navbar/>
+        <main id="main">
         <Hero/>
         <About/>
         <Skills/>
         <Resume/>
         <Projects/>
-        <Contact/>
-        <Footer/>
+        <Contact/>  
+        </main>
         <ScrollToTop/>
         <Preloader/>
+        <Footer/>
         </>
     )
 }

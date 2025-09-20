@@ -1,5 +1,5 @@
 import React from 'react'
-
+import profileImg from "../assets/img/my-profile-img.jpg";
 import { useState, useEffect } from "react";
 
 function About() {
@@ -36,10 +36,10 @@ function About() {
         <div className="row gy-4 justify-content-center">
           <div className="col-lg-4">
             <img
-              src="assets/img/my-profile-img.jpg"
-              className="img-fluid"
-              alt="My Profile"
-            />
+               src={profileImg}
+               className="img-fluid"
+               alt="My Profile"
+                />
           </div>
           <div className="col-lg-8 content">
             <div className="row">

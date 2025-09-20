@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="profile-img">
         <img src={profileImg} alt="Anup Dhakal" className="img-fluid rounded-circle" />
       </div>
-s
+
       {/* Logo / Name */}
       <a href="/" className="logo d-flex align-items-center justify-content-center">
         {/* If you want logo image, uncomment below and import it like profileImg */}

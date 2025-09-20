@@ -1,5 +1,6 @@
 import React from 'react'
 import profileImg from "../assets/img/my-profile-img.jpg"; // 
+
 const Header = () => {
   return (
     <div>
@@ -11,8 +12,7 @@ const Header = () => {
       <div className="profile-img">
         <img src={profileImg} alt="Anup Dhakal" className="img-fluid rounded-circle" />
       </div>
-s
-      {/* Logo / Name */}
+           {/* Logo / Name */}
       <a href="/" className="logo d-flex align-items-center justify-content-center">
         {/* If you want logo image, uncomment below and import it like profileImg */}
         {/* <img src={logoImg} alt="Logo" /> */}

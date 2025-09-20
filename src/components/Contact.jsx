@@ -1,14 +1,59 @@
 import React from "react";
+import Swal from "sweetalert2";
 
 const Contact = () => {
-  const sendMail = () => {
-    // Example: Replace this with your email sending logic
-    alert("Message sent!");
+  const onSubmit = async (event) => {
+    event.preventDefault();
+
+    // ✅ Validate form using browser's built-in validation
+    if (!event.target.checkValidity()) {
+      event.target.reportValidity();
+      return;
+    }
+
+    const formData = new FormData(event.target);
+    formData.append("access_key", "99f074bb-9abe-4926-be49-38a9973ef2bc"); // your Web3Forms key
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: json,
+      }).then((res) => res.json());
+
+      if (res.success) {
+        Swal.fire({
+          title: "Success",
+          text: "Message Sent Successfully!",
+          icon: "success",
+        });
+        event.target.reset(); // clear form
+      } else {
+        Swal.fire({
+          title: "Error",
+          text: "Something went wrong. Please try again.",
+          icon: "error",
+        });
+      }
+    } catch (err) {
+      Swal.fire({
+        title: "Error",
+        text: "Network issue. Please try again.",
+        icon: "error",
+      });
+    }
   };
 
   return (
     <div>
       <section id="contact" className="contact section">
+        {/* Title */}
         <div className="container section-title" data-aos="fade-up">
           <h2>Contact</h2>
         </div>
@@ -38,7 +83,7 @@ const Contact = () => {
                   <i className="bi bi-telephone flex-shrink-0"></i>
                   <div>
                     <h3>Call Us</h3>
-                    <p>+977 9864240023</p>
+                    <p>+977 986424002*</p>
                   </div>
                 </div>
 
@@ -50,10 +95,10 @@ const Contact = () => {
                   <i className="bi bi-envelope flex-shrink-0"></i>
                   <div>
                     <h3>Email Us</h3>
-                    <p>anup.dkal@gmail.com</p>
+                    <p>contact@anupdhakal1.com.np</p>
                   </div>
                 </div>
-
+ 
                 <iframe
                   title="Portfolio preview"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28220.28812605456!2d83.52048555191486!3d27.85480026371584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39967f7040b82b1d%3A0xb7142bb9805c4488!2sTansen%2032500!5e0!3m2!1sen!2snp!4v1736692716353!5m2!1sen!2snp"
@@ -72,6 +117,7 @@ const Contact = () => {
                 className="php-email-form"
                 data-aos="fade-up"
                 data-aos-delay="500"
+                onSubmit={onSubmit}
               >
                 <div className="row gy-4">
                   <div className="col-md-6">
@@ -128,17 +174,13 @@ const Contact = () => {
 
                   <div className="col-md-12 text-center">
                     <button
-                      type="button"
-                      onClick={sendMail}
-                      className="btn btn-primary rounded-pill px-4 py-2 text-white hover:bg-blue-600 transition-colors"
-                    >
+                      type="submit"
+                      className="btn btn-primary rounded-pill px-4 py-2 text-white hover:bg-blue-600 transition-colors">
                       Send Message
                     </button>
-                    <div id="form-error-message" className="text-danger mt-3"></div>
                   </div>
                 </div>
               </form>
-              <div id="status"></div>
             </div>
           </div>
         </div>

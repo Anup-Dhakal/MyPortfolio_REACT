@@ -13,7 +13,7 @@ const Skills = () => {
           <div className="col-lg-6">
             <div className="progress">
               <span className="skill">
-                <span>HTML</span> <i className="val">40%</i>
+                <span>HTML</span> <i className="val"></i>
               </span>
               <div className="progress-bar-wrap">
                 <div
@@ -29,7 +29,7 @@ const Skills = () => {
 
             <div className="progress">
               <span className="skill">
-                <span>CSS</span> <i className="val">55%</i>
+                <span>CSS</span> <i className="val"></i>
               </span>
               <div className="progress-bar-wrap">
                 <div
@@ -45,7 +45,7 @@ const Skills = () => {
 
             <div className="progress">
               <span className="skill">
-                <span>JavaScript</span> <i className="val">20%</i>
+                <span>JavaScript</span> <i className="val"></i>
               </span>
               <div className="progress-bar-wrap">
                 <div
@@ -64,7 +64,7 @@ const Skills = () => {
           <div className="col-lg-6">
             <div className="progress">
               <span className="skill">
-                <span>Python</span> <i className="val">70%</i>
+                <span>Python</span> <i className="val"></i>
               </span>
               <div className="progress-bar-wrap">
                 <div
@@ -80,7 +80,7 @@ const Skills = () => {
 
             <div className="progress">
               <span className="skill">
-                <span>C/C++</span> <i className="val">80%</i>
+                <span>C/C++</span> <i className="val"></i>
               </span>
               <div className="progress-bar-wrap">
                 <div
@@ -96,7 +96,7 @@ const Skills = () => {
 
             <div className="progress">
               <span className="skill">
-                <span>Photoshop</span> <i className="val">20%</i>
+                <span>Photoshop</span> <i className="val"></i>
               </span>
               <div className="progress-bar-wrap">
                 <div

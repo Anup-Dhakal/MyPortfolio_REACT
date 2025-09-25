@@ -63,6 +63,13 @@ const Navbar = () => {
               <i className="bi bi-envelope navicon"></i> Contact
             </a>
           </li>
+
+          <li>
+            <a href="https://drive.google.com/file/d/1F7OXyVSnpTsC1BgR3IucnqYBLJQ3yp_n/view?usp=drive_link" rel ="noreferrer" target = "__blank">
+              <i className="bi bi-file-earmark-pdf navicon"></i>View CV
+            </a>
+          </li>
+
         </ul>
       </nav>
     </header>

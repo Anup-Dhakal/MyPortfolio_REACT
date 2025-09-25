@@ -19,15 +19,7 @@ const Resume = () => {
           <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <h3 className="resume-title">Summary</h3>
 
-            <div className="resume-item pb-0">
-              <h4>Anup Dhakal</h4>
-              <p>
-                <em>
-                  Proactive and detail-oriented final-year student. Experienced
-                  in YOLO, OpenCV, PyTorch, and Python development.
-                </em>
-              </p>
-            </div>
+            
 
             <h3 className="resume-title">Education</h3>
             <div className="resume-item">
@@ -38,17 +30,11 @@ const Resume = () => {
                   Khwopa College of Engineering, Bhaktapur, Bagmati State
                 </em>
               </p>
-              <p>
-                Focused on developing innovative solutions for real-world
-                problems, with a specialization in machine learning, computer
-                vision, and intelligent systems. Worked on multiple projects
-                involving video processing, dataset management, and deep
-                learning.
-              </p>
+              
             </div>
 
             <div className="resume-item">
-              <h4>Science Faculty</h4>
+              <h4>+2 Science</h4>
               <h5>2018 - 2020</h5>
               <p>
                 <em>St. Xavier's School, Jawalakhel</em>
@@ -87,6 +73,11 @@ const Resume = () => {
                 </li>
               </ul>
             </div>
+             <div className="resume-item">
+              <a href ="https://drive.google.com/file/d/1F7OXyVSnpTsC1BgR3IucnqYBLJQ3yp_n/view?usp=drive_link" target="_blank" rel="noreferrer">
+              <h4>View CV </h4>
+              </a>
+              </div>
           </div>
         </div>
       </div>

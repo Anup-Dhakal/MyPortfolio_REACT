@@ -27,8 +27,7 @@ function About() {
       <div className="container section-title" data-aos="fade-up">
         <h2>About</h2>
         <p>
-          I am Anup Dhakal currently studying computer engineering in Khwopa
-          College of Engineering in eighth Semester.
+          I am Anup Dhakal Computer Engineering Graduate From Tribhuvan University.
         </p>
       </div>
 

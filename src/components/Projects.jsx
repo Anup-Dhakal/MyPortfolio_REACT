@@ -21,7 +21,7 @@ const Projects = () => {
               </div>
               <div>
                 <h4 className="title">
-                  <a href="service-details.html" className="stretched-link">
+                  <a href="https://github.com/Anup-Dhakal/NEPSE-stock-Prediction-ML-Project" className="stretched-link">
                     NEPSE Stock Prediction using LSTM
                   </a>
                 </h4>

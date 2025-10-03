@@ -68,7 +68,7 @@ const Projects = () => {
               </div>
               <div>
                 <h4 className="title">
-                  <a href="service-details.html" className="stretched-link">
+                  <a href="https://colab.research.google.com/drive/1dmI7nN0vplheysY4_2eTX_V3dQCd-tXt?usp=sharing" className="stretched-link" target = "_blank" rel="noreferrer">
                     Image Generation using GANs
                   </a>
                 </h4>

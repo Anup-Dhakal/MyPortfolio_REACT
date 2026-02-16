@@ -167,6 +167,14 @@ h6 {
 .header .logo {
   line-height: 1;
   margin-bottom: 15px;
+  text-decoration: none !important;
+}
+
+.header .logo:hover,
+.header .logo:focus,
+.header .logo:active,
+.header .logo:visited {
+  text-decoration: none !important;
 }
 
 .header .logo img {
@@ -267,6 +275,7 @@ h6 {
 .navmenu a,
 .navmenu a:focus {
   color: var(--nav-color);
+  text-decoration: none !important;
   padding: 15px 10px;
   font-family: var(--nav-font);
   font-size: 16px;
@@ -310,6 +319,7 @@ h6 {
 .navmenu .active,
 .navmenu .active:focus {
   color: var(--nav-hover-color);
+  text-decoration: none !important;
 }
 
 .navmenu a:hover .navicon,
@@ -475,6 +485,13 @@ h6 {
   font-size: 24px;
   font-weight: 700;
 }
+a, a:hover, a:focus {
+  text-decoration: none;
+}
+.services .service-item .title a {
+  text-decoration: none;
+}
+
 
 .page-title .breadcrumbs ol {
   display: flex;
@@ -588,7 +605,7 @@ section,
 
 .hero p span {
   letter-spacing: 1px;
-  border-bottom: 2px solid var(--accent-color);
+  
 }
 
 .hero .social-links {

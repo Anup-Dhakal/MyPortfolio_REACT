@@ -40,7 +40,7 @@ const Hero = () => {
           I'm a {" "}
           <span
             className="typed"
-            data-typed-items="Student, Developer, Freelancer, Photographer"
+            data-typed-items="Engineer, Developer, Freelancer, Photographer"
           ></span>
         </p>
       </div>

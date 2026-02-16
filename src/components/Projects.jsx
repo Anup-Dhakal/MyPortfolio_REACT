@@ -43,7 +43,7 @@ const Projects = () => {
               </div>
               <div>
                 <h4 className="title">
-                  <a href="service-details.html" className="stretched-link">
+                  <a href="https://github.com/Anup-Dhakal/SmartFlow" className="stretched-link">
                     SmartFlow: Intelligent Traffic Management System for Speed
                     Monitoring and Adaptive Signal Control
                   </a>

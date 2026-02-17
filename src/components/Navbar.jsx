@@ -1,11 +1,24 @@
-import React from "react";
-import profileImg from "../assets/img/my-profile-img.jpg"; // ✅ import image
+import React, { useState } from "react";
+import profileImg from "../assets/img/my-profile-img.jpg";
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen((prev) => !prev);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
-    <header id="header" className="header dark-background d-flex flex-column">
+    <header id="header" className={`header dark-background d-flex flex-column ${isMenuOpen ? "header-show" : ""}`}>
       {/* Mobile toggle */}
-      <i className="header-toggle d-xl-none bi bi-list"></i>
+      <i
+        className={`header-toggle d-xl-none bi ${isMenuOpen ? "bi-x" : "bi-list"}`}
+        onClick={toggleMenu}
+      ></i>
 
       {/* Profile Image */}
       <div className="profile-img">
@@ -14,8 +27,6 @@ const Navbar = () => {
 
       {/* Logo / Name */}
       <a href="/" className="logo d-flex align-items-center justify-content-center">
-        {/* If you want logo image, uncomment below and import it like profileImg */}
-        {/* <img src={logoImg} alt="Logo" /> */}
         <h1 className="sitename">Anup Dhakal</h1>
       </a>
 
@@ -39,37 +50,40 @@ const Navbar = () => {
       <nav id="navmenu" className="navmenu">
         <ul>
           <li>
-            <a href="#hero" className="active">
+            <a href="#hero" className="active" onClick={closeMenu}>
               <i className="bi bi-house navicon"></i> Home
             </a>
           </li>
           <li>
-            <a href="#about">
+            <a href="#about" onClick={closeMenu}>
               <i className="bi bi-person navicon"></i> About
             </a>
           </li>
           <li>
-            <a href="#resume">
+            <a href="#resume" onClick={closeMenu}>
               <i className="bi bi-file-earmark-text navicon"></i> Resume
             </a>
           </li>
           <li>
-            <a href="#projects">
+            <a href="#projects" onClick={closeMenu}>
               <i className="bi bi-hdd-stack navicon"></i> Projects
             </a>
           </li>
           <li>
-            <a href="#contact">
+            <a href="#contact" onClick={closeMenu}>
               <i className="bi bi-envelope navicon"></i> Contact
             </a>
           </li>
-
           <li>
-            <a href="https://drive.google.com/file/d/1F7OXyVSnpTsC1BgR3IucnqYBLJQ3yp_n/view?usp=drive_link" rel ="noreferrer" target = "__blank">
+            <a
+              href="https://drive.google.com/file/d/1F7OXyVSnpTsC1BgR3IucnqYBLJQ3yp_n/view?usp=drive_link"
+              rel="noreferrer"
+              target="_blank"
+              onClick={closeMenu}
+            >
               <i className="bi bi-file-earmark-pdf navicon"></i>View CV
             </a>
           </li>
-
         </ul>
       </nav>
     </header>
